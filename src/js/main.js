@@ -1,5 +1,5 @@
-// import '../sass/style.sass';
-// import '../css/style.css';
+import '../sass/style.sass';
+import '../css/style.css';
 function hideIncompleteRows() {
   const cardsWidth = document.querySelector(".cards").offsetWidth;
   const gap = 20; // Совпадает с CSS gap
