@@ -1,5 +1,5 @@
-﻿# sveak
-Запуск webpack:
-1 npm i
-2 npx webpack
+﻿# sveak. 
+Запуск webpack:  
+1 npm I br. 
+2 npx webpack. 
 Открытие файла после в dist/index.html
