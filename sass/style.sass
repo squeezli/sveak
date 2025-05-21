@@ -157,6 +157,8 @@ $medium: 1023px
 
 @media screen and (max-width: $small)
     main
+        margin-top: -66px
+        padding-top: 66px
         .container
             margin: 0
     .header
@@ -311,9 +313,21 @@ $medium: 1023px
         margin-top: auto
         background-color: #bae370 !important
         z-index: 3 !important
+        height: 200px
 
     .card:nth-child(n+16)
         display: none
+
+    .cards
+        display: grid
+        grid-template-columns: repeat(auto-fill, minmax(115px, 150px))
+        gap: 20px
+        padding: 20px
+        padding-top: 20px
+        padding-bottom: 20px
+        justify-content: center
+        padding-bottom: 220px
+        padding-top: 86px
 body
     display: flex
     min-height: 100vh
@@ -391,7 +405,6 @@ main
     z-index: 5
     min-width: 250px
     background-color: #e27fe6
-    
 
 .footer
     left: 0
@@ -432,3 +445,6 @@ main
 .burger__checkbox
     position: absolute
     visibility: hidden
+
+.container
+    height: 100%
