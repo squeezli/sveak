@@ -5,8 +5,8 @@
     padding-top: 66px !important;
   }
   .cards {
-    padding-bottom: 30px !important;
     padding-top: 80px !important;
+    padding-bottom: 175px !important;
   }
   .header {
     background-color: #56aea6 !important;
@@ -312,7 +312,7 @@
     margin-top: auto !important;
     background-color: #bae370 !important;
     z-index: 3 !important;
-    height: 150px !important;
+    height: 175px !important;
   }
   .card:nth-child(n+16) {
     display: none;
@@ -332,8 +332,8 @@ body {
 }
 
 main {
-  margin-top: 66px;
-  max-height: 80vh;
+  margin-top: -66px;
+  max-height: 100vh;
   overflow: scroll;
   scrollbar-width: none;
 }
@@ -458,7 +458,8 @@ main {
   gap: 20px;
   padding: 20px;
   justify-content: center;
-  padding-bottom: 50px;
+  padding-bottom: 70px;
+  padding-top: 156px;
 }
 
 .burger__checkbox {
