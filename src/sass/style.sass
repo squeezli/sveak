@@ -1,0 +1,454 @@
+@import ../css/normalize.css
+
+$small: 640px
+$medium: 1023px
+
+@media screen and (min-width:$small) and (max-width:$medium)
+
+    main
+        margin-top: -66px !important
+        padding-top: 66px !important
+
+    .cards
+        padding-top: 80px !important
+        padding-bottom: 175px !important
+
+    .header
+        background-color: #56aea6 !important
+        position: fixed
+        width: 100vw !important
+        height: 66px
+        top: 0
+
+    .logo
+        right: 0 !important
+
+    .menu
+        border-right: none !important
+        width: 0 !important
+        height: 0 !important
+        background-color: transparent !important
+        position: fixed
+        z-index: 1
+
+    .burger__checkbox
+        position: absolute
+        visibility: hidden
+
+    .burger__menu
+        cursor: pointer
+        display: block
+        position: relative
+        border: none
+        background: transparent
+        width: 40px
+        height: 26px
+        margin: 15px 15px
+
+        &:before,
+        &:after
+            content: ''
+            left: 0
+            position: absolute
+            display: block
+            width: 100%
+            height: 4px
+            border-radius: 10px
+            background: #000
+
+        &:before
+            top: 0
+            box-shadow: 0 11px 0 #000
+            transition: box-shadow .3s .15s, top .3s .15s, transform .3s
+
+        &:after
+            bottom: 0
+            transition: bottom .3s .15s, transform .3s
+
+    .burger__checkbox
+        &:checked &:before
+            top: 11px
+            transform: rotate(45deg)
+            box-shadow: 0 6px 0 rgba(0,0,0,0)
+            transition: box-shadow .15s, top .3s, transform .3s .15s
+    .burger__checkbox
+        &:checked &:after
+            bottom: 11px
+            transform: rotate(-45deg)
+            transition: bottom .3s, transform .3s .15s
+    .burger__checkbox
+        position: absolute
+        visibility: hidden
+
+    .burger__menu
+        position: relative
+        z-index: 10
+        cursor: pointer
+        display: block
+        position: relative
+        border: none
+        background: transparent
+        width: 40px
+        height: 26px
+
+        &:before,
+        &:after
+            content: ''
+            left: 0
+            position: absolute
+            display: block
+            width: 100%
+            height: 4px
+            border-radius: 10px
+            background: #000
+
+        &:before
+            top: 0
+            box-shadow: 0 11px 0 #000
+            transition: box-shadow .3s .15s, top .3s .15s, transform .3s
+
+        &:after
+            bottom: 0
+            transition: bottom .3s .15s, transform .3s
+
+    .burger__checkbox:checked + .burger__menu::before
+        top: 11px
+        transform: rotate(45deg)
+        box-shadow: 0 6px 0 rgba(0,0,0,0)
+        transition: box-shadow .15s, top .3s, transform .3s .15s
+
+    .burger__checkbox:checked + .burger__menu::after
+        bottom: 11px
+        transform: rotate(-45deg)
+        transition: bottom .3s, transform .3s .15s
+
+    .menu__list
+        position: absolute
+        top: 0
+        left: 0
+        position: absolute
+        gap: 12px
+        padding: 42px 0
+        margin: 0
+        background-color: #f26cfd
+        list-style-type: none
+        transform: translateX(-100%)
+        transition: .3s
+        width: 250px
+        z-index: 5
+        box-sizing: border-box
+        overflow: scroll
+        height: 100vh !important
+        background-color: #f26cfd !important
+
+    .menu__list__item
+        display: block
+        padding: 8px
+        color: white
+        font-size: 18px
+        text-align: center
+        text-decoration: none
+
+        &:hover
+            background: rgba(255,255,255,.2)
+
+    .burger__checkbox:checked ~ .menu__list
+        transform: translateX(0)
+
+    .page__wrapper
+        background-color: #a3e6df !important
+
+    .footer
+        background-color: #56aea6 !important
+        margin-top: auto !important
+        z-index: 3 !important
+        height: 150px !important
+
+@media screen and (max-width: $small)
+    main
+        margin-top: -66px !important
+        padding-top: 66px !important
+        .container
+            margin: 0
+    .header
+        background-color: #78ec37 !important
+        position: fixed
+        width: 100vw
+        height: 66px
+        top: 0
+
+    .logo
+        right: 0 !important
+
+    .menu
+        border-right: none !important
+        width: 0 !important
+        height: 0 !important
+        background-color: transparent !important
+        position: fixed
+        z-index: 1
+
+    .burger__checkbox
+        position: absolute
+        visibility: hidden
+
+    .burger__menu
+        cursor: pointer
+        display: block
+        position: relative
+        border: none
+        background: transparent
+        width: 40px
+        height: 26px
+        margin: 15px 15px
+
+        &:before,
+        &:after
+            content: ''
+            left: 0
+            position: absolute
+            display: block
+            width: 100%
+            height: 4px
+            border-radius: 10px
+            background: #000
+
+        &:before
+            top: 0
+            box-shadow: 0 11px 0 #000
+            transition: box-shadow .3s .15s, top .3s .15s, transform .3s
+
+        &:after
+            bottom: 0
+            transition: bottom .3s .15s, transform .3s
+
+    .burger__checkbox
+        &:checked &:before
+            top: 11px
+            transform: rotate(45deg)
+            box-shadow: 0 6px 0 rgba(0,0,0,0)
+            transition: box-shadow .15s, top .3s, transform .3s .15s
+    .burger__checkbox
+        &:checked &:after
+            bottom: 11px
+            transform: rotate(-45deg)
+            transition: bottom .3s, transform .3s .15s
+    .burger__checkbox
+        position: absolute
+        visibility: hidden
+
+    .burger__menu
+        position: relative
+        z-index: 10
+        cursor: pointer
+        display: block
+        position: relative
+        border: none
+        background: transparent
+        width: 40px
+        height: 26px
+
+        &:before,
+        &:after
+            content: ''
+            left: 0
+            position: absolute
+            display: block
+            width: 100%
+            height: 4px
+            border-radius: 10px
+            background: #000
+
+        &:before
+            top: 0
+            box-shadow: 0 11px 0 #000
+            transition: box-shadow .3s .15s, top .3s .15s, transform .3s
+
+        &:after
+            bottom: 0
+            transition: bottom .3s .15s, transform .3s
+
+    .burger__checkbox:checked + .burger__menu::before
+        top: 11px
+        transform: rotate(45deg)
+        box-shadow: 0 6px 0 rgba(0,0,0,0)
+        transition: box-shadow .15s, top .3s, transform .3s .15s
+
+    .burger__checkbox:checked + .burger__menu::after
+        bottom: 11px
+        transform: rotate(-45deg)
+        transition: bottom .3s, transform .3s .15s
+
+    .menu__list
+        top: 0
+        left: 0
+        position: absolute
+        gap: 12px
+        padding: 42px 0
+        margin: 0
+        background-color: #f26cfd
+        list-style-type: none
+        transform: translateX(-100%)
+        transition: .3s
+        z-index: 5
+        box-sizing: border-box
+        overflow: scroll
+        width: 100vw !important
+        height: 100vh !important
+        background-color: #f26cfd !important
+
+    .menu__list__item
+        display: block
+        padding: 8px
+        color: white
+        font-size: 18px
+        text-align: center
+        text-decoration: none
+        width: 200px
+        margin: 30px auto
+        height: 40px
+
+    .burger__checkbox:checked ~ .menu__list
+        transform: translateX(0)
+
+    .page__wrapper
+        background-color: #e2fdb3 !important
+
+    .footer
+        margin-top: auto !important
+        background-color: #bae370 !important
+        z-index: 3 !important
+        height: 175px !important
+
+    .card:nth-child(n+16)
+        display: none
+
+    .cards
+        display: grid
+        grid-template-columns: repeat(auto-fill, minmax(115px, 150px))
+        gap: 20px
+        justify-content: center
+        padding-bottom: 30px !important
+        padding-top: 86px !important
+body
+    display: flex
+    min-height: 100vh
+
+main
+    margin-top: -66px
+    max-height: 100vh
+    overflow: scroll
+    scrollbar-width: none
+
+.card_title
+    max-height: 150px
+
+.card__text
+    overflow: hidden
+    display: -webkit-box
+    -webkit-line-clamp: 3
+    -webkit-box-orient: vertical
+    white-space: pre-line
+
+.menu__list
+    margin: 0 auto
+    list-style: none
+
+.menu__list__item
+    margin: 30px auto
+    border: none
+
+.menu__list__button
+    text-align: center
+    padding: 10px 70px
+    background-color: #ad3db0
+    color: #fff
+    border-radius: 45px
+    margin: auto
+    text-decoration: none
+
+.logo
+    padding-right: 50px
+    top: 50%
+    transform: translate(0, -50%)
+    right: 270px
+    position: absolute
+
+.header
+    z-index: 3
+    border-bottom: dimgray solid 5px
+
+.header__inner
+    height: 100%
+    width: 100%
+    position: relative
+
+.header__logo
+    right: 270px
+
+.container
+    margin: 0px 40px
+
+.page__wrapper
+    display: flex
+    min-height: 100vh
+    min-width: 100%
+    background-color: #e27fe6
+
+.content__wrapper
+    flex-grow: 1
+    flex-direction: column
+    display: flex
+.menu
+    width: 250px
+    background-color: #DCDCDC
+    border-right: dimgray solid 5px
+    height: 100%
+    z-index: 5
+    min-width: 250px
+    background-color: #e27fe6
+
+.footer
+    left: 0
+    border-top: dimgray solid 5px
+    width: 100%
+    bottom: 0
+    position: absolute
+    left: 0
+    z-index: 10
+    overflow: hidden
+    background-color: #e27fe6
+    z-index: 5
+
+.header
+    background-color: #e27fe6
+    position: fixed
+    width: 100vw
+    height: 60px
+    top: 0
+
+.card
+    background: #fff
+    border-radius: 8px
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1)
+    max-width: 145px
+    min-width: 115px
+    aspect-ratio: 1 / 1
+    padding: 5px
+    overflow: hidden
+
+.cards
+    display: grid
+    grid-template-columns: repeat(auto-fill, minmax(115px, 150px))
+    gap: 20px
+    padding: 20px
+    justify-content: center
+    padding-bottom: 70px
+    padding-top: 156px
+
+.burger__checkbox
+    position: absolute
+    visibility: hidden
+
+.container
+    height: 100%
