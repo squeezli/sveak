@@ -5,6 +5,14 @@ $medium: 1023px
 
 @media screen and (min-width:$small) and (max-width:$medium)
 
+    main
+        margin-top: -66px !important
+        padding-top: 66px !important
+
+    .cards
+        padding-bottom: 30px !important
+        padding-top: 80px !important
+
     .header
         background-color: #56aea6 !important
         position: fixed
@@ -151,14 +159,15 @@ $medium: 1023px
         background-color: #a3e6df !important
 
     .footer
-        margin-top: auto
         background-color: #56aea6 !important
+        margin-top: auto !important
         z-index: 3 !important
+        height: 150px !important
 
 @media screen and (max-width: $small)
     main
-        margin-top: -66px
-        padding-top: 66px
+        margin-top: -66px !important
+        padding-top: 66px !important
         .container
             margin: 0
     .header
@@ -297,11 +306,7 @@ $medium: 1023px
         text-decoration: none
         width: 200px
         margin: 30px auto
-        border: solid
         height: 40px
-
-        &:hover
-            background: rgba(255,255,255,.2)
 
     .burger__checkbox:checked ~ .menu__list
         transform: translateX(0)
@@ -310,10 +315,10 @@ $medium: 1023px
         background-color: #e2fdb3 !important
 
     .footer
-        margin-top: auto
+        margin-top: auto !important
         background-color: #bae370 !important
         z-index: 3 !important
-        height: 200px
+        height: 150px !important
 
     .card:nth-child(n+16)
         display: none
@@ -322,12 +327,9 @@ $medium: 1023px
         display: grid
         grid-template-columns: repeat(auto-fill, minmax(115px, 150px))
         gap: 20px
-        padding: 20px
-        padding-top: 20px
-        padding-bottom: 20px
         justify-content: center
-        padding-bottom: 220px
-        padding-top: 86px
+        padding-bottom: 30px !important
+        padding-top: 86px !important
 body
     display: flex
     min-height: 100vh
@@ -422,7 +424,7 @@ main
     background-color: #e27fe6
     position: fixed
     width: 100vw
-    height: 66px
+    height: 60px
     top: 0
 
 .card
@@ -441,6 +443,7 @@ main
     gap: 20px
     padding: 20px
     justify-content: center
+    padding-bottom: 50px
 
 .burger__checkbox
     position: absolute
