@@ -322,7 +322,7 @@
     grid-template-columns: repeat(auto-fill, minmax(115px, 150px));
     gap: 20px;
     justify-content: center;
-    padding-bottom: 30px !important;
+    padding-bottom: 200px !important;
     padding-top: 86px !important;
   }
 }
